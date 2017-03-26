@@ -6,43 +6,16 @@
   
   <title>关于懒汉模式 | 清风不羁，闲云永伴</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="普通的懒汉模式
-
-  public class SingleAndThreadLazy {
-private static SingleAndThreadLazy singleAndThreadLazy;
-
-private SingleAndThreadLazy() {
-}
-//这里不加锁的话会出现多个对象,但是这种方式存在的问题是浪费资源
-//必须等到锁释放后才能被重新访问，效率就不科学了
-  s">
+  <meta name="description" content="几种懒汉模式书写介绍">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于懒汉模式">
 <meta property="og:url" content="https://github.com/BigDuck/BigDuck.github.io/2016/12/11/关于懒汉模式/index.html">
 <meta property="og:site_name" content="清风不羁，闲云永伴">
-<meta property="og:description" content="普通的懒汉模式
-
-  public class SingleAndThreadLazy {
-private static SingleAndThreadLazy singleAndThreadLazy;
-
-private SingleAndThreadLazy() {
-}
-//这里不加锁的话会出现多个对象,但是这种方式存在的问题是浪费资源
-//必须等到锁释放后才能被重新访问，效率就不科学了
-  s">
-<meta property="og:updated_time" content="2016-12-11T12:39:10.625Z">
+<meta property="og:description" content="几种懒汉模式书写介绍">
+<meta property="og:updated_time" content="2017-03-26T12:18:59.687Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于懒汉模式">
-<meta name="twitter:description" content="普通的懒汉模式
-
-  public class SingleAndThreadLazy {
-private static SingleAndThreadLazy singleAndThreadLazy;
-
-private SingleAndThreadLazy() {
-}
-//这里不加锁的话会出现多个对象,但是这种方式存在的问题是浪费资源
-//必须等到锁释放后才能被重新访问，效率就不科学了
-  s">
+<meta name="twitter:description" content="几种懒汉模式书写介绍">
   
     <link rel="alternative" href="/atom.xml" title="清风不羁，闲云永伴" type="application/atom+xml">
   
@@ -120,12 +93,10 @@ private SingleAndThreadLazy() {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>普通的懒汉模式
-
-  public class SingleAndThreadLazy {
-private static SingleAndThreadLazy singleAndThreadLazy;
-
-private SingleAndThreadLazy() {
+        <pre><code>几种懒汉模式书写介绍
+</code></pre>  <a id="more"></a>
+<p>  普通的懒汉模式<br>      public class SingleAndThreadLazy {<br>    private static SingleAndThreadLazy singleAndThreadLazy;</p>
+<pre><code>private SingleAndThreadLazy() {
 }
 //这里不加锁的话会出现多个对象,但是这种方式存在的问题是浪费资源
 //必须等到锁释放后才能被重新访问，效率就不科学了
@@ -175,7 +146,7 @@ return singleAndThreadLazy_lv1;
     </div>
     <footer class="article-footer">
       
-        <a data-url="https://github.com/BigDuck/BigDuck.github.io/2016/12/11/关于懒汉模式/" data-id="ciwkmu30m0002xgdqtbwannnd" class="article-share-link" data-share="baidu" data-title="关于懒汉模式">分享到</a>
+        <a data-url="https://github.com/BigDuck/BigDuck.github.io/2016/12/11/关于懒汉模式/" data-id="cj0qnqjfk0004a0dquq6tqgyk" class="article-share-link" data-share="baidu" data-title="关于懒汉模式">分享到</a>
       
 
       
@@ -188,6 +159,15 @@ return singleAndThreadLazy_lv1;
   
     
 <nav id="article-nav">
+  
+    <a href="/2017/03/26/logstash-input-jdbc安装/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          logstash-input-jdbc安装
+        
+      </div>
+    </a>
   
   
     <a href="/2016/12/11/zookeeper集群/" id="article-nav-older" class="article-nav-link-wrap">
@@ -210,7 +190,7 @@ return singleAndThreadLazy_lv1;
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zookeeper/">zookeeper</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/我/">我</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/elk/">elk</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zookeeper/">zookeeper</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/我/">我</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -219,7 +199,7 @@ return singleAndThreadLazy_lv1;
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/我/" style="font-size: 10px;">我</a>
+      <a href="/tags/elk/" style="font-size: 10px;">elk</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/我/" style="font-size: 10px;">我</a>
     </div>
   </div>
 
@@ -228,7 +208,7 @@ return singleAndThreadLazy_lv1;
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -238,6 +218,10 @@ return singleAndThreadLazy_lv1;
     <h3 class="widget-title">近期文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/03/26/logstash-input-jdbc安装/">logstash-input-jdbc安装</a>
+          </li>
         
           <li>
             <a href="/2016/12/11/关于懒汉模式/">关于懒汉模式</a>
@@ -282,7 +266,7 @@ return singleAndThreadLazy_lv1;
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2016 wupj<br>
+      &copy; 2017 wupj<br>
       Powered by <a href="//hexo.io/" target="_blank">Hexo</a>
       .
       Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
